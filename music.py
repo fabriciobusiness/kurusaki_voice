@@ -84,16 +84,7 @@ async def on_message(message):
                     await client.send_message(message.channel, "Error: [{error}]".format(error=error))
         except Exception as e:
             await client.send_message(message.channel, "Error: [{error}]".format(error=e)
-
-     if message.content.startswith('!volume'):
-        try:
-            state = self.get_voice_state(message.server)
-        if state.is_playing():
-            player = state.player
-            player.volume = value / 100
-await self.bot.say('Set the volume to {:.0%}'.format(player.volume))
-
-
+                                      
     if message.content.startswith('!pause'):
         try:
             mscpause = discord.Embed(
