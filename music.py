@@ -83,11 +83,7 @@ async def on_message(message):
                 except Exception as error:
                     await client.send_message(message.channel, "Error: [{error}]".format(error=error))
         except Exception as e:
-            await client.send_message(message.channel, "Error: [{error}]".format(error=e))
-if state.voice is None:
-            success = await ctx.invoke(self.summon)
-            if not success:
-                return
+            await client.send_message(message.channel, "Error: [{error}]".format(error=e)
 
      if message.content.startswith('!volume'):
         try:
