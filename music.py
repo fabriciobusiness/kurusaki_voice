@@ -83,8 +83,11 @@ async def on_message(message):
                 except Exception as error:
                     await client.send_message(message.channel, "Error: [{error}]".format(error=error))
         except Exception as e:
-            await client.send_message(message.channel, "Error: [{error}]".format(error=e)
-                                      
+            await client.send_message(message.channel, "Error: [{error}]".format(error=e))
+
+
+
+
     if message.content.startswith('!pause'):
         try:
             mscpause = discord.Embed(
