@@ -111,4 +111,4 @@ async def on_message(message):
         except Exception as error:
             await client.send_message(message.channel, "Error: [{error}]".format(error=error))
             
-bot.run('NTU0NTEyMDIyMTQ3MTcwMzE0.D2dtFQ.zcLLDv8BMKCpDwur5DdeaPEa1_U')
+client.run('NTU0NTEyMDIyMTQ3MTcwMzE0.D2dtFQ.zcLLDv8BMKCpDwur5DdeaPEa1_U')
