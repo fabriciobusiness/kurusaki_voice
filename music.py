@@ -91,7 +91,7 @@ if state.voice is None:
 
      if message.content.startswith('!volume'):
         try:
-            state = self.get_voice_state(ctx.message.server)
+            state = self.get_voice_state(message.server)
         if state.is_playing():
             player = state.player
             player.volume = value / 100
